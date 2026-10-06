@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Satisfaction vs Reliability — Исправленная визуализация</title>
+<link rel="stylesheet" href="mistakes.css">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/d3/7.9.0/d3.min.js"></script>
+</head>
+<body>
+<div class="page">
+  <div class="viz-section">
+    <div class="chart-card">
+      <h2>Удовлетворённость владельцев vs Надёжность автомобильных брендов</h2>
+      <p class="chart-subtitle">Satisfaction — % готовых купить снова · Reliability — индекс надёжности · Источник: Ranking Royals</p>
+      <div class="legend" id="legend"></div>
+      <div class="chart-wrap">
+        <svg id="scatter"></svg>
+      </div>
+    </div>
+    <div class="chart-card">
+      <h2>Разница рангов: Satisfaction vs Reliability</h2>
+      <p class="chart-subtitle">Положительное значение — бренд ценят выше, чем он надёжен. Отрицательное — надёжнее, чем кажется владельцам.</p>
+      <div class="chart-wrap">
+        <svg id="diverging"></svg>
+      </div>
+    </div>
+  </div>
+</div>
+<script src="mistakes.js?v=4"></script>
+</body>
+</html>
